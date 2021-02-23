@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //Zadanie 2
-            double wynik;
-            wynik = ((9.5 * 4.5) - (2.5 * 3)) / (45.5 - 3.5);
-            System.out.println(wynik);
-            System.out.println();
-            }}
+    //Zadanie 3
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj Celcjusze");
+        int d = scanner.nextInt();
+        System.out.println( (9 / 5) * d + 32);
+        System.out.println();
