@@ -1,0 +1,37 @@
+package com.company;
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int pierwsza_liczba, druga_liczba, trzecia_liczba;
+        Scanner liczba = new Scanner(System.in);
+        System.out.println("Podaj pierwsza liczbe");
+        pierwsza_liczba = liczba.nextInt();
+        System.out.println("Podaj druga liczbe");
+        druga_liczba = liczba.nextInt();
+        System.out.println("Podaj trzecia liczbe");
+        trzecia_liczba = liczba.nextInt();
+        if ((pierwsza_liczba > druga_liczba) && (pierwsza_liczba > trzecia_liczba)) {
+            System.out.print(+pierwsza_liczba + " ");
+            if (druga_liczba > trzecia_liczba)
+                System.out.println(+ druga_liczba + " " + trzecia_liczba + " ");
+            else
+                System.out.println(+ trzecia_liczba + " " + druga_liczba + " ");
+        }
+            else if ((druga_liczba>pierwsza_liczba)&&(druga_liczba>trzecia_liczba)){
+            System.out.print(+ druga_liczba + " ");
+            if (pierwsza_liczba>trzecia_liczba)
+                System.out.println(+ pierwsza_liczba + " " + trzecia_liczba + " ");
+            else
+                System.out.println(+ trzecia_liczba + " " + pierwsza_liczba + " ");
+        }
+            else{
+            System.out.print(+ trzecia_liczba + " ");
+            if(druga_liczba>pierwsza_liczba)
+                System.out.println(+ druga_liczba + " " + pierwsza_liczba + " ");
+            else
+                System.out.println(+ pierwsza_liczba + " " + druga_liczba + " ");
+        }
+    }}
+    
+    
